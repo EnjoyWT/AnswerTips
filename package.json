@@ -1,0 +1,30 @@
+{
+  "name": "answer-tips",
+  "version": "1.0.0",
+  "description": "Mac桌面图片OCR识别工具",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "pkg package.json --targets node18-macos-x64,node18-win-x64 --output dist/answer-tips"
+  },
+  "keywords": ["ocr", "image", "monitor", "mac"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "assets": [
+      "config.json"
+    ]
+  }
+}
